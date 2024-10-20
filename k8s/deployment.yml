@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: first-deployment
+  namespace: first-proj
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: first-proj
+  template:
+    metadata:
+      labels:
+        app: first-proj
+    spec:
+      containers:
+      - name: zero-to-hero
+        image: iashor1/first-proj-py-img:latest  # Replace with your Docker image
+        ports:
+        - containerPort: 5000

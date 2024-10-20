@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: first-svc
+  namespace: first-proj
+  labels:
+    app: first-proj
+spec:
+  selector:
+    app: first-proj
+  type: NodePort 
+  ports:
+  - port: 5000
+    targetPort: 5000

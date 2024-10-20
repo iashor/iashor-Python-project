@@ -1,0 +1,9 @@
+.gitignore
+README.md
+.history
+Dockerfile 
+*.yml
+*.sh
+*.md
+imgs/
+k8s
