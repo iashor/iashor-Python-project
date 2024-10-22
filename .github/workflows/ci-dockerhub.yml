@@ -5,7 +5,7 @@ on:
       #- main  # Change to your desired branch
 
 env:
-  DOCKER_REPO: first-prog-ci-dockerfile  # Set your Docker repository
+  DOCKER_REPO: first-proj-ci-dockerfile  # Set your Docker repository
   IMAGE_TAG: latest  # Set your desired image tag
 
 jobs:
